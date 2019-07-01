@@ -1,0 +1,173 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>Contact Us</title>
+<link rel="stylesheet" type="text/css" href="style1.css">
+
+<script type="text/javascript">
+
+function check(){
+                var f=document.getElementById('Fname').value;
+				var l=document.getElementById('Lname').value;
+				var e=document.getElementById('Email').value;
+   				var m=document.getElementById('msg').value;
+
+                
+                if(f=="" || l=="" || e=="" || m==""){
+                    document.getElementById('error').innerHTML="Fill all the fields";
+                    
+                    return false;
+                }
+               
+            }
+
+</script>
+
+
+
+
+</head>
+
+<body>
+
+<h1>Contact Us</h1>
+<h4><a href="login_success.php">Back to Welcome Page</a></h4>
+  
+</p>
+<h3><strong>Do you have a question, concern, idea, feedback, or problem? Take a look at our <a href="faq.html">frequently asked questions</a> for some quick answers. If you still need assistance, please fill out the form below and we'd be happy to help!</strong></h3>
+<p>&nbsp;</p>
+
+<form action="support.html" method="post" onsubmit="return check()">
+   	
+      <label>
+        <blockquote>
+          <p><strong> Type of contact</strong></p>
+        </blockquote>
+      </label>
+      <br/> <br/>
+      <p>
+        
+          <input type="radio" name="support-type" />I have a question about the service.
+          
+          <br />
+          <input required="required" type="radio" name="support-type" value="I'm a registered client and I need support" />
+          I'm a registered client and I need support.</label>
+        <label>
+          <br />
+          <input required="required" type="radio" name="support-type" value="I'm a counselor interested in joining" />
+          I'm a counselor interested in joining.</label>
+        <label>
+          <br />
+          <input required="required" type="radio" name="support-type" value="I'm a registered counselor and I need support" />
+          I'm a registered counselor and I need support.</label>
+        <label>
+          <br />
+          <input required="required" type="radio" name="support-type" value="I have a business-related inquiry" />
+          I have a business-related inquiry.</label>
+        <label>
+          <br />
+          <input required="required" type="radio" name="support-type" value="I have a billing related question" />
+          I have a billing related question.</label>
+      </p>
+     <br/> <br/>
+    
+      <br/><br/>
+      
+      <strong><label id="error" style="color:red;font-size:20px"></label></strong>
+      <table height="216" border="0">
+      <tr>
+      
+      <td width="166" height="45"><label>
+        <blockquote>
+          <p><strong>First name:</strong></p>
+        </blockquote>
+      </label></td>
+      <td width="217"><blockquote>
+        <p>
+          <input type="text" id="Fname" name="first-name" value="" />
+        </p>
+      </blockquote></td>
+      </tr>
+    
+      <tr>
+      <td height="45"><label>
+        <blockquote>
+          <p><strong>Last name:</strong></p>
+        </blockquote>
+      </label></td>
+      <td><blockquote>
+        <p>
+          <input type="text" id="Lname" name="last-name" value="" />
+        </p>
+      </blockquote></td>
+      </tr>
+       
+      <tr>    
+       <td height="46"><label>
+         <blockquote>
+           <p><strong>Email address:</strong></p>
+         </blockquote>
+       </label></td>
+       <td><blockquote>
+         <p>
+           <input type="text" id="Email" name="email" value="" />
+         </p>
+       </blockquote></td>
+       </tr>
+   
+      <tr>
+      <td height="70"><label>
+        <blockquote>
+          <p><strong>Message:</strong></p>
+        </blockquote>
+      </label></td>
+      <td><blockquote>
+        <p id="msg" name="message">
+          <textarea id="msg" name="message"></textarea>
+        </p>
+      </blockquote></td>
+       </tr>
+    </table>
+    
+      <blockquote>
+        <blockquote>
+<input type="submit" value="Submit" />
+          <br/>
+                <br/>
+                <br/><br/>
+        </blockquote>
+  </blockquote>
+    
+  </form>
+
+    <blockquote>
+      <blockquote>
+        <address>
+          <strong> TalkMate</strong> <strong>, </strong>
+        </address>
+        <address>
+        <strong>234/A ,</strong>
+        </address>
+        <address>
+        <strong>YMBA Building ,</strong>
+        </address>
+        <address>
+        <strong>Cinnamon Gardens ,
+        </strong>
+        </address>
+        <address>
+        <strong>Colombo 07,
+        </strong>
+        </address>
+        <address>
+        <strong>Sri Lanka.
+        <br />
+        </strong>
+        </address>
+      </blockquote>
+    </blockquote>
+ 
+      <br/><br/>
+</body>
+</html>
